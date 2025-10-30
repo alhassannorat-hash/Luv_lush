@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuvLush – Affordable Glam for Every Babe</title>
+  <style>
+    /* 🌸 RESET + BASE STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f5fc;
+      color: #3d2b57;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom right, #e9d8fd, #f3e7ff);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #8a5be8;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #5f4787;
+      font-size: 1rem;
+    }
+
+    header .slogan {
+      margin-top: 5px;
+      font-style: italic;
+      color: #9a6cf2;
+    }
+
+    .shop-now {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #cba6f7;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .shop-now:hover {
+      background-color: #b98cf5;
+      box-shadow: 0 0 10px #cba6f7;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* 🌸 PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      background: #f2e8ff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(203, 166, 247, 0.5);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      font-size: 1.1rem;
+      color: #743cd2;
+    }
+
+    .product p {
+      color: #5f4787;
+      margin: 8px 0;
+    }
+
+    .price {
+      color: #8a5be8;
+      font-weight: bold;
+    }
+
+    /* 🌸 ABOUT */
+    .about {
+      background: #ede4fb;
+      border-radius: 30px;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* 🌸 CONTACT */
+    footer {
+      background: #f1e5ff;
+      text-align: center;
+      padding: 30px 20px;
+      color: #5f4787;
+    }
+
+    footer a {
+      color: #8a5be8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .shop-now {
+        padding: 10px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌸 HEADER -->
+  <header>
+    <h1>LuvLush</h1>
+    <p>Affordable Glam for Every Babe</p>
+    <p class="slogan">Glow. Sparkle. Slay.</p>
+    <a href="https://instagram.com/shopluvlush" class="shop-now">Shop Now</a>
+  </header>
+
+  <!-- 💄 PRODUCTS -->
+  <section id="products">
+    <h2>Our Faves</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?lipgloss,purple" alt="Lip Gloss Set">
+        <h3>Lip Gloss Set</h3>
+        <p>Shiny, smooth, and long-lasting glow.</p>
+        <p class="price">₵45</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?bodyoil,beauty" alt="Body Shimmer Oil">
+        <h3>Body Shimmer Oil</h3>
+        <p>Silky glow for that soft glam touch.</p>
+        <p class="price">₵65</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?lipscrub,beauty" alt="Lip Scrub">
+        <h3>Lip Scrub</h3>
+        <p>Gently exfoliates and nourishes lips.</p>
+        <p class="price">₵30</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?earrings,jewelry" alt="Earrings">
+        <h3>Crystal Earrings</h3>
+        <p>Elegant sparkle for any outfit.</p>
+        <p class="price">₵70</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?scrunchies,accessories" alt="Scrunchies">
+        <h3>Velvet Scrunchies</h3>
+        <p>Soft, stylish, and hair-friendly.</p>
+        <p class="price">₵25</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?bracelet,jewelry" alt="Bracelet">
+        <h3>Charm Bracelet</h3>
+        <p>Minimal, chic, and full of personality.</p>
+        <p class="price">₵55</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?perfume,bottle" alt="Perfume Mist">
+        <h3>Perfume Mist</h3>
+        <p>Soft lavender scent that lasts all day.</p>
+        <p class="price">₵85</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?necklace,jewelry" alt="Necklace">
+        <h3>Deluxe Necklace</h3>
+        <p>Classy finishing touch to your outfit.</p>
+        <p class="price">₵90</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💜 ABOUT -->
+  <section id="about">
+    <h2>About LuvLush</h2>
+    <div class="about">
+      <p>LuvLush is where glow meets confidence. We create affordable, high-quality beauty and accessory essentials made to help every babe shine with style and self-love. 💋</p>
+    </div>
+  </section>
+
+  <!-- 💌 CONTACT -->
+  <footer id="contact">
+    <p>Contact us: <a href="mailto:luvlushbeauty@gmail.com">luvlushbeauty@gmail.com</a></p>
+    <p>Follow us on Instagram: <a href="https://instagram.com/shopluvlush">@shopluvlush</a></p>
+  </footer>
+
+</body>
+</<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuvLush – Affordable Glam for Every Babe</title>
+  <style>
+    /* 🌸 RESET + BASE STYLES */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f8f5fc;
+      color: #3d2b57;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to bottom right, #e9d8fd, #f3e7ff);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #8a5be8;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #5f4787;
+      font-size: 1rem;
+    }
+
+    header .slogan {
+      margin-top: 5px;
+      font-style: italic;
+      color: #9a6cf2;
+    }
+
+    .shop-now {
+      display: inline-block;
+      margin-top: 20px;
+      background-color: #cba6f7;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .shop-now:hover {
+      background-color: #b98cf5;
+      box-shadow: 0 0 10px #cba6f7;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    /* 🌸 PRODUCTS */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .product {
+      background: #f2e8ff;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(203, 166, 247, 0.5);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .product h3 {
+      font-size: 1.1rem;
+      color: #743cd2;
+    }
+
+    .product p {
+      color: #5f4787;
+      margin: 8px 0;
+    }
+
+    .price {
+      color: #8a5be8;
+      font-weight: bold;
+    }
+
+    /* 🌸 ABOUT */
+    .about {
+      background: #ede4fb;
+      border-radius: 30px;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* 🌸 CONTACT */
+    footer {
+      background: #f1e5ff;
+      text-align: center;
+      padding: 30px 20px;
+      color: #5f4787;
+    }
+
+    footer a {
+      color: #8a5be8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .shop-now {
+        padding: 10px 25px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🌸 HEADER -->
+  <header>
+    <h1>LuvLush</h1>
+    <p>Affordable Glam for Every Babe</p>
+    <p class="slogan">Glow. Sparkle. Slay.</p>
+    <a href="https://instagram.com/shopluvlush" class="shop-now">Shop Now</a>
+  </header>
+
+  <!-- 💄 PRODUCTS -->
+  <section id="products">
+    <h2>Our Faves</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?lipgloss,purple" alt="Lip Gloss Set">
+        <h3>Lip Gloss Set</h3>
+        <p>Shiny, smooth, and long-lasting glow.</p>
+        <p class="price">₵45</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?bodyoil,beauty" alt="Body Shimmer Oil">
+        <h3>Body Shimmer Oil</h3>
+        <p>Silky glow for that soft glam touch.</p>
+        <p class="price">₵65</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?lipscrub,beauty" alt="Lip Scrub">
+        <h3>Lip Scrub</h3>
+        <p>Gently exfoliates and nourishes lips.</p>
+        <p class="price">₵30</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?earrings,jewelry" alt="Earrings">
+        <h3>Crystal Earrings</h3>
+        <p>Elegant sparkle for any outfit.</p>
+        <p class="price">₵70</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?scrunchies,accessories" alt="Scrunchies">
+        <h3>Velvet Scrunchies</h3>
+        <p>Soft, stylish, and hair-friendly.</p>
+        <p class="price">₵25</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?bracelet,jewelry" alt="Bracelet">
+        <h3>Charm Bracelet</h3>
+        <p>Minimal, chic, and full of personality.</p>
+        <p class="price">₵55</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?perfume,bottle" alt="Perfume Mist">
+        <h3>Perfume Mist</h3>
+        <p>Soft lavender scent that lasts all day.</p>
+        <p class="price">₵85</p>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x400/?necklace,jewelry" alt="Necklace">
+        <h3>Deluxe Necklace</h3>
+        <p>Classy finishing touch to your outfit.</p>
+        <p class="price">₵90</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 💜 ABOUT -->
+  <section id="about">
+    <h2>About LuvLush</h2>
+    <div class="about">
+      <p>LuvLush is where glow meets confidence. We create affordable, high-quality beauty and accessory essentials made to help every babe shine with style and self-love. 💋</p>
+    </div>
+  </section>
+
+  <!-- 💌 CONTACT -->
+  <footer id="contact">
+    <p>Contact us: <a href="mailto:luvlushbeauty@gmail.com">luvlushbeauty@gmail.com</a></p>
+    <p>Follow us on Instagram: <a href="https://instagram.com/shopluvlush">@shopluvlush</a></p>
+  </footer>
+
+</body>
+</html> 
